@@ -18,7 +18,7 @@ class MainPage(webapp2.RequestHandler):
 
 class FootprintInput(webapp2.RequestHandler):
     def get(self):
-        template = the_jinja_environment.get_template('templates/result.html')
+        template = the_jinja_environment.get_template('templates/input.html')
         the_variable_dict = {
 
         }
@@ -27,7 +27,7 @@ class FootprintInput(webapp2.RequestHandler):
 
 class FootprintOutput(webapp2.RequestHandler):
     def get(self):
-        template = the_jinja_environment.get_template('templates/result.html')
+        template = the_jinja_environment.get_template('templates/output.html')
         the_variable_dict = {
 
         }
@@ -36,7 +36,7 @@ class FootprintOutput(webapp2.RequestHandler):
 
 class AboutUs(webapp2.RequestHandler):
     def get(self):
-        template = the_jinja_environment.get_template('templates/result.html')
+        template = the_jinja_environment.get_template('templates/about.html')
         the_variable_dict = {
 
         }
@@ -44,7 +44,8 @@ class AboutUs(webapp2.RequestHandler):
         self.response.write(template.render(the_variable_dict))
 
 app = webapp2.WSGIApplication([
-    ('/', WelcomePage),
-    ('/result', ResultPage),
-    ('/signup', SignupPage),
+    ('/', MainPage),
+    ('/input', FootprintInput),
+    ('/output', FootprintOutput),
+    ('/about', AboutUs),
 ], debug=True)
