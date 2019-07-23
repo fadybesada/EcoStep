@@ -31,7 +31,7 @@ var chartOptions = {
   },
   title: {
     display: true,
-    text: "Chart.js Bar Chart"
+    text: "Carbon Footprint"
   },
   scales: {
     yAxes: [{
