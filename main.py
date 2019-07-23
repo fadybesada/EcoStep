@@ -33,7 +33,7 @@ class FootprintInput(webapp2.RequestHandler):
 
         heating_oil = self.request.get('heating_oil')
         heating_oilCO = calculations.heatingOilCalc(heating_oil)
-        print heating_oil
+        print heating_oilCO
 
         miles_driven = self.request.get('miles_driven')
         miles_drivenCO = calculations.milesDrivenCalc(miles_driven)
@@ -55,7 +55,7 @@ class FootprintInput(webapp2.RequestHandler):
         hotel_nightsCO = calculations.hotelNightsCalc(hotel_nights)
         print hotel_nightsCO
 
-        totalCO = calculations.FootprintTotal(electricity, natural_gas, heating_oil, miles_driven, miles_flown)
+        totalCO = calculations.FootprintTotal(electricity, natural_gas, heating_oil, miles_driven, miles_flown, miles_bus, hotel_nights)
         print totalCO
 
         template = the_jinja_environment.get_template('templates/output.html')
