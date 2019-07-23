@@ -64,7 +64,15 @@ class FootprintInput(webapp2.RequestHandler):
         elif totalCO < 30 and totalCO > 15:
             rating = "Not Bad"
         template_vars = {
-            "rating": rating
+            "rating": rating,
+            "electricityCO": electricityCO,
+            "natural_gasCO": natural_gasCO,
+            "heating_oilCO": heating_oilCO,
+            "miles_drivenCO": miles_drivenCO,
+            "miles_flownCO": miles_flownCO,
+            "miles_trainCO": miles_trainCO,
+            "miles_busCO": miles_busCO,
+            "hotel_nightsCO": hotel_nightsCO,
         }
 
         template = the_jinja_environment.get_template('templates/output.html')
