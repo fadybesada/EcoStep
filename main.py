@@ -58,8 +58,15 @@ class FootprintInput(webapp2.RequestHandler):
         totalCO = calculations.FootprintTotal(electricity, natural_gas, heating_oil, miles_driven, miles_flown, miles_train, miles_bus, hotel_nights)
         print totalCO
 
+        rating = "Good"
+        if totalCO > 30:
+            rating = "Poor"
+        template_vars = {
+            "rating": rating
+        }
+
         template = the_jinja_environment.get_template('templates/output.html')
-        self.response.write(template.render())
+        self.response.write(template.render(template_vars))
 
 class FootprintOutput(webapp2.RequestHandler):
     def get(self):
