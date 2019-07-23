@@ -10,36 +10,28 @@ the_jinja_environment = jinja2.Environment(
 class MainPage(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_environment.get_template('templates/mainpage.html')
-        the_variable_dict = {
 
-        }
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write(template.render(the_variable_dict))
 
 class FootprintInput(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_environment.get_template('templates/input.html')
-        the_variable_dict = {
 
-        }
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write(template.render(the_variable_dict))
 
 class FootprintOutput(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_environment.get_template('templates/output.html')
-        the_variable_dict = {
 
-        }
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write(template.render(the_variable_dict))
 
 class AboutUs(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_environment.get_template('templates/about.html')
-        the_variable_dict = {
 
-        }
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write(template.render(the_variable_dict))
 
