@@ -11,28 +11,35 @@ var barChartData = {
   ],
   datasets: [
     {
-      label: "American Express",
+      label: "Commuter Travel",
       backgroundColor: "pink",
       borderColor: "red",
       borderWidth: 1,
       data: [3, 5, 6, 7,3, 5, 6, 7]
     },
     {
-      label: "Mastercard",
+      label: "Personal Travel",
       backgroundColor: "lightblue",
       borderColor: "blue",
       borderWidth: 1,
       data: [4, 7, 3, 6, 10,7,4,6]
     },
     {
-      label: "Paypal",
+      label: "Food",
+      backgroundColor: "lightblack",
+      borderColor: "black",
+      borderWidth: 1,
+      data: [10,7,4,6,9,7,3,10]
+    },
+    {
+      label: "Home",
       backgroundColor: "lightgreen",
       borderColor: "green",
       borderWidth: 1,
       data: [10,7,4,6,9,7,3,10]
     },
     {
-      label: "Visa",
+      label: "Hotel",
       backgroundColor: "yellow",
       borderColor: "orange",
       borderWidth: 1,
