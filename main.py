@@ -14,9 +14,6 @@ class MainPage(webapp2.RequestHandler):
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write(template.render())
 
-    def post(self):
-
-
 class FootprintInput(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_environment.get_template('templates/input.html')
