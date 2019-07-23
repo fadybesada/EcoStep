@@ -1,84 +1,76 @@
-$(function () {
-    $('#container').highcharts({
-        chart: {
-            type: 'bar',
-              style: {
-           		fontFamily:'FaktPro, Helvetica, arial, sans-serif',
+var barChartData = {
+  labels: [
+    "Absence of OB",
+    "Closeness",
+    "Credibility",
+    "Heritage",
+    "M Disclosure",
+    "Provenance",
+    "Reliability",
+    "Transparency"
+  ],
+  datasets: [
+    {
+      label: "Commuter Travel",
+      backgroundColor: "pink",
+      borderColor: "red",
+      borderWidth: 1,
+      data: [3, 5, 6, 7,3, 5, 6, 7]
+    },
+    {
+      label: "Personal Travel",
+      backgroundColor: "lightblue",
+      borderColor: "blue",
+      borderWidth: 1,
+      data: [4, 7, 3, 6, 10,7,4,6]
+    },
+    {
+      label: "Food",
+      backgroundColor: "lightblack",
+      borderColor: "black",
+      borderWidth: 1,
+      data: [10,7,4,6,9,7,3,10]
+    },
+    {
+      label: "Home",
+      backgroundColor: "lightgreen",
+      borderColor: "green",
+      borderWidth: 1,
+      data: [10,7,4,6,9,7,3,10]
+    },
+    {
+      label: "Hotel",
+      backgroundColor: "yellow",
+      borderColor: "orange",
+      borderWidth: 1,
+      data: [6,9,7,3,10,7,4,6]
+    }
+  ]
+};
 
-           }
-        },
-        title: {
-        	align: 'left',
-            text: 'TKTK'
-        },
-        subtitle: {
-            text: ''
-        },
-        legend: {
-        	 align: 'right',
-    		verticalAlign: 'top',
-    		y: 20
-        },
-        exporting: {
-        	enabled: false
-        },
-        credits: {
-        	enabled: false
-        },
-        xAxis: {
-            categories: [
-                'Have a good <br> work/life balance',
-                'Experienced sexual <br> discrimination in <br> the past year',
-                'Experienced direct <br> discrimination in <br> the past year',
-                'Experienced indirect <br> discrimination in <br> the past year',
-                'Experienced bullying <br> in the past year',
-                'Experienced sexual <br> harassment in <br> the past year',
-            ],
-            crosshair: true
-        },
-        yAxis: {
-            labels: {
-            formatter: function () {
-                return this.value + '%' ;
-            }
-        },
-            min: 0,
-            ceiling: 100,
-            title: {
-                text: 'Percent of Respondents',
+var chartOptions = {
+  responsive: true,
+  legend: {
+    position: "top"
+  },
+  title: {
+    display: true,
+    text: "Chart.js Bar Chart"
+  },
+  scales: {
+    yAxes: [{
+      ticks: {
+        beginAtZero: true
+      }
+    }]
+  }
+}
 
-
-
-            }
-        },
-
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:1f}% </b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-        plotOptions: {
-            column: {
-                pointPadding: 0,
-                borderWidth: 0
-            }
-        },
-        series: [{
-            name: 'TK1',
-            color: '#bdbdbd',
-            data: [59, 32, 21, 18, 28, 14]
-
-
-
-        }, {
-            name: 'TK2',
-            color: '#5e5e5e',
-            data: [69, 3, 4, 5, 15, 2]
-
-        }]
-    });
-});
-//]]>
+window.onload = function() {
+  var ctx = document.getElementById("canvas").getContext("2d");
+  window.myBar = new Chart(ctx, {
+    type: "bar",
+    data: barChartData,
+    options: chartOptions
+  });
+};

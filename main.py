@@ -61,6 +61,8 @@ class FootprintInput(webapp2.RequestHandler):
         rating = "Good"
         if totalCO > 30:
             rating = "Poor"
+        elif totalCO < 30 and totalCO > 15:
+            rating = "Not Bad"
         template_vars = {
             "rating": rating
         }
