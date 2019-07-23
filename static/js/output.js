@@ -1,49 +1,25 @@
 var barChartData = {
   labels: [
-    "Absence of OB",
-    "Closeness",
-    "Credibility",
-    "Heritage",
-    "M Disclosure",
-    "Provenance",
-    "Reliability",
-    "Transparency"
+    "Commuter Travel",
+    "Personal Travel",
+    "Food",
+    "Home",
+    "Hotel"
   ],
   datasets: [
     {
-      label: "Commuter Travel",
+      label: "Footprint",
       backgroundColor: "pink",
       borderColor: "red",
       borderWidth: 1,
       data: [3, 5, 6, 7,3, 5, 6, 7]
     },
     {
-      label: "Personal Travel",
+      label: "National Average",
       backgroundColor: "lightblue",
       borderColor: "blue",
       borderWidth: 1,
       data: [4, 7, 3, 6, 10,7,4,6]
-    },
-    {
-      label: "Food",
-      backgroundColor: "lightblack",
-      borderColor: "black",
-      borderWidth: 1,
-      data: [10,7,4,6,9,7,3,10]
-    },
-    {
-      label: "Home",
-      backgroundColor: "lightgreen",
-      borderColor: "green",
-      borderWidth: 1,
-      data: [10,7,4,6,9,7,3,10]
-    },
-    {
-      label: "Hotel",
-      backgroundColor: "yellow",
-      borderColor: "orange",
-      borderWidth: 1,
-      data: [6,9,7,3,10,7,4,6]
     }
   ]
 };
