@@ -24,7 +24,39 @@ class FootprintInput(webapp2.RequestHandler):
 
     def post(self):
         electricity = self.request.get('electricity')
-        electricityCalc = calculations.electricityCalculator(electricity)
+        electricityCO = calculations.electricityCalc(electricity)
+        print electricityCO
+
+        natural_gas = self.request.get('natural_gas')
+        natural_gasCO = calculations.naturalGasCalc(natural_gas)
+        print natural_gasCO
+
+        heating_oil = self.request.get('heating_oil')
+        heating_oilCO = calculations.heatingOilCalc(heating_oil)
+        print heating_oil
+
+        miles_driven = self.request.get('miles_driven')
+        miles_drivenCO = calculations.milesDrivenCalc(miles_driven)
+        print miles_drivenCO
+
+        miles_flown = self.request.get('miles_flown')
+        miles_flownCO = calculations.milesFlownCalc(miles_flown)
+        print miles_flownCO
+
+        miles_train = self.request.get('miles_train')
+        miles_trainCO = calculations.milesTrainCalc(miles_train)
+        print miles_trainCO
+
+        miles_bus = self.request.get('miles_bus')
+        miles_busCO = calculations.milesBusCalc(miles_bus)
+        print miles_busCO
+
+        hotel_nights = self.request.get('hotel_nights')
+        hotel_nightsCO = calculations.hotelNightsCalc(hotel_nights)
+        print hotel_nightsCO
+
+        totalCO = calculations.FootprintTotal(electricity, natural_gas, heating_oil, miles_driven, miles_flown)
+        print totalCO
 
         template = the_jinja_environment.get_template('templates/output.html')
         self.response.write(template.render())
