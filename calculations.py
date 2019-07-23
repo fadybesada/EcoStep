@@ -1,1 +1,4 @@
-def electricity()
+import main
+
+def electricityCalculator(electricity)
+    
