@@ -24,6 +24,10 @@ class FootprintInput(webapp2.RequestHandler):
 
     def post(self):
         electricity = self.request.get('electricity')
+        electricityCalc = calculations.electricityCalculator(electricity)
+
+        template = the_jinja_environment.get_template('templates/output.html')
+        self.response.write(template.render())
 
 class FootprintOutput(webapp2.RequestHandler):
     def get(self):
