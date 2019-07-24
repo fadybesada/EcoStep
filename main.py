@@ -17,10 +17,10 @@ class MainPage(webapp2.RequestHandler):
 class FootprintInput(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_environment.get_template('templates/input.html')
-
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write(template.render())
 
+class FootprintOutput(webapp2.RequestHandler):
     def post(self):
         electricity = self.request.get('electricity')
         electricityCO = calculations.electricityCalc(electricity)
@@ -69,11 +69,6 @@ class FootprintInput(webapp2.RequestHandler):
         template = the_jinja_environment.get_template('templates/output.html')
         self.response.write(template.render(template_vars))
 
-class FootprintOutput(webapp2.RequestHandler):
-    def get(self):
-        template = the_jinja_environment.get_template('templates/output.html')
-        self.response.headers['Content-Type'] = 'text/html'
-        self.response.write(template.render())
 
 class AboutUs(webapp2.RequestHandler):
     def get(self):
