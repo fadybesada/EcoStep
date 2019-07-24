@@ -15,7 +15,18 @@
   </div>
 
   <body>
-    <h1>Your Carbon Footprint rating is: {{ rating }}</h1>
+    {% if rating == "Good" %}
+      <h1>Your Carbon Footprint rating is: <span style = "color: green">{{ rating }}</span></h1>
+    {% endif %}
+
+    {% if rating == "Fair" %}
+      <h1>Your Carbon Footprint rating is: <span style = "color: gold">{{ rating }}</span></h1>
+    {% endif %}
+
+    {% if rating == "Poor" %}
+      <h1>Your Carbon Footprint rating is: <span style = "color: red">{{ rating }}</span></h1>
+    {% endif %}
+
     <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
     </div>
 <div id="hidden">

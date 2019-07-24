@@ -52,7 +52,7 @@ class FootprintOutput(webapp2.RequestHandler):
         if totalCO > 30:
             rating = "Poor"
         elif totalCO < 30 and totalCO > 20:
-            rating = "Not Bad"
+            rating = "Fair"
         template_vars = {
             "rating": rating,
             "electricityCO": electricityCO,
