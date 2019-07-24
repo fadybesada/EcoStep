@@ -2,6 +2,7 @@ import jinja2
 import os
 import webapp2
 import calculations
+import random
 
 the_jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
@@ -13,6 +14,21 @@ class MainPage(webapp2.RequestHandler):
         template = the_jinja_environment.get_template('templates/mainpage.html')
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write(template.render())
+
+    def post(self):
+        scary_facts = ["Average global sea level is expected to rise 7 – 23 inches before the end of this century", "More than a million species face potential extinction as a result of disappearing habitats, changing ecosystems, and acidifying oceans", \
+        "The Arctic region may have its first completely ice-free summer by 2040", "99.84% of the land in the state of California is suffering from drought", \
+        "From 1979 to 2003, excessive heat exposure contributed to more than 8,000 premature deaths in the United States", \
+        "The concentration of carbon dioxide (CO2)​​​​​​​ in our atmosphere, as of 2018, is the highest it has been in 3 million years.", \
+        "Eleven percent of the world’s population is currently vulnerable to climate change impacts such as droughts, floods, heat waves, extreme weather events and sea-level rise.", \
+        "Indonesia is moving its capital city as its current capital is sinking.", "Average wildlife populations have dropped by 60 percent in just over 40 years.", \
+        "Two-thirds of extreme weather events in the last 20 years were influenced by humans", "Every single minute, the equivalent of 30 football pitches of tropical forests are being lost." \
+        "If major change does not very soon, the damages of climate change will be irreversible by 2030.", "We are using more of Earth's resources than it could possibly renew."]
+
+        scary_facts_select = random.choice(scary_facts)
+
+        template = the_jinja_environment.get_template('templates/mainpage.html')
+        self.response.write(template.render(scary_facts_select))
 
 class FootprintInput(webapp2.RequestHandler):
     def get(self):
@@ -57,8 +73,6 @@ class FootprintOutput(webapp2.RequestHandler):
             rating = "Fair"
         elif totalCO < 20 and totalCO > 15:
             rating = "Good"
-
-
 
         template_vars = {
             "rating": rating,
