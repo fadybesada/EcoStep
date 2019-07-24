@@ -43,7 +43,7 @@ var barChartData = {
       backgroundColor: "lightblue",
       borderColor: "blue",
       borderWidth: 1,
-      data: [4, 7, 3, 6, 10,7,4,6]
+      data: [4, 7, 3, 2.545, 10]
     }
   ]
 };
@@ -55,7 +55,7 @@ var chartOptions = {
   },
   title: {
     display: true,
-    text: "Carbon Footprint"
+    text: "Carbon Footprint (metric tons of CO2)"
   },
   scales: {
     yAxes: [{
