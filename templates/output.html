@@ -15,6 +15,10 @@
   </div>
 
   <body>
+    {% if rating == "Very Good" %}
+      <h1>Your Carbon Footprint rating is: <span style = "color: lime">{{ rating }}</span></h1>
+    {% endif %}
+
     {% if rating == "Good" %}
       <h1>Your Carbon Footprint rating is: <span style = "color: green">{{ rating }}</span></h1>
     {% endif %}
@@ -24,6 +28,10 @@
     {% endif %}
 
     {% if rating == "Poor" %}
+      <h1>Your Carbon Footprint rating is: <span style = "color: orangered">{{ rating }}</span></h1>
+    {% endif %}
+
+    {% if rating == "Very Poor" %}
       <h1>Your Carbon Footprint rating is: <span style = "color: red">{{ rating }}</span></h1>
     {% endif %}
 
