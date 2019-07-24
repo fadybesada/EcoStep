@@ -9,17 +9,13 @@ body {
 
 
 #parent{
-  /* border: 3px dotted black; */
   height: 700px;
   width: 100%;
 
 /* flexbox */
   display: inline-flex;
-
   justify-content: space-evenly;
   align-items: center;
-  /*flex-wrap: wrap-reverse;
-  align-content: flex-start;*/
 
 }
 
@@ -29,7 +25,7 @@ body {
   padding-right: 20px;
   height: 300px;
   width: 400px;
-  color:white;
+
 }
 
 #second{
