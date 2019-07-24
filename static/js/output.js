@@ -36,7 +36,7 @@ var barChartData = {
       backgroundColor: "pink",
       borderColor: "red",
       borderWidth: 1,
-      data: [(electricityCO + natural_gasCO + heating_oilCO), (miles_drivenCO + miles_flownCO), (miles_trainCO + miles_busCO), hotel_nightsCO]
+      data: [(electricityCO + natural_gasCO + heating_oilCO), (miles_drivenCO + miles_flownCO), (miles_trainCO + miles_busCO), 2.545, hotel_nightsCO]
     },
     {
       label: "National Average Carbon Footprint",
