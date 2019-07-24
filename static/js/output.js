@@ -22,13 +22,16 @@ const miles_busCO = Number(miles_bus.innerHTML);
 const hotel_nights = document.getElementById('hotel_nightsCO');
 const hotel_nightsCO = Number(hotel_nights.innerHTML);
 
+const total = document.getElementById('totalCO');
+const totalCO = Number(total.innerHTML);
+
 var barChartData = {
   labels: [
     "Home Utility",
     "Personal Travel",
     "Commuter Travel",
-    "Food",
-    "Hotel"
+    "Hotel",
+    "Total"
   ],
   datasets: [
     {
@@ -36,14 +39,14 @@ var barChartData = {
       backgroundColor: "pink",
       borderColor: "red",
       borderWidth: 1,
-      data: [(electricityCO + natural_gasCO + heating_oilCO), (miles_drivenCO + miles_flownCO), (miles_trainCO + miles_busCO), 2.545, hotel_nightsCO]
+      data: [(electricityCO + natural_gasCO + heating_oilCO), (miles_drivenCO + miles_flownCO), (miles_trainCO + miles_busCO), hotel_nightsCO, totalCO]
     },
     {
       label: "National Average Carbon Footprint",
       backgroundColor: "lightblue",
       borderColor: "blue",
       borderWidth: 1,
-      data: [4, 7, 3, 2.545, 10]
+      data: [14.536325, 6.002, 2.834, 0.076, 23.6]
     }
   ]
 };

@@ -48,11 +48,18 @@ class FootprintOutput(webapp2.RequestHandler):
 
         totalCO = calculations.FootprintTotal(electricity, natural_gas, heating_oil, miles_driven, miles_flown, miles_train, miles_bus, hotel_nights)
 
-        rating = "Good"
-        if totalCO > 30:
+        rating = "Very Good"
+        if totalCO > 35:
+            rating = "Very Poor"
+        elif totalCO < 40 and totalCO > 35:
             rating = "Poor"
         elif totalCO < 30 and totalCO > 20:
             rating = "Fair"
+        elif totalCO < 20 and totalCO > 15:
+            rating = "Good"
+
+
+
         template_vars = {
             "rating": rating,
             "electricityCO": electricityCO,
