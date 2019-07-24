@@ -13,21 +13,21 @@ class MainPage(webapp2.RequestHandler):
     def get(self):
         self.response.headers['Content-Type'] = 'text/html'
         template = the_jinja_environment.get_template('templates/mainpage.html')
-        scary_facts = ["Average global sea level is expected to rise 7-23 inches before the end of this century", "More than a million species face potential extinction as a result of disappearing habitats, changing ecosystems, and acidifying oceans",
-        "The Arctic region may have its first completely ice-free summer by 2040"]
+        scary_facts = ["Average global sea level is expected to rise 7-23 inches before the end of this century.", "More than a million species face potential extinction as a result of disappearing habitats, changing ecosystems, and acidifying oceans.",
+        "The Arctic region may have its first completely ice-free summer by 2040."]
 
-        scary_facts1 = ["The concentration of carbon dioxide (CO2) in our atmosphere, as of 2018, is the highest it has been in 3 million years",
-        "Eleven percent of the world's population is currently vulnerable to climate change impacts such as droughts, floods, heat waves, extreme weather events and sea-level rise",
-        "Indonesia is moving its capital city as its current capital is sinking"]
+        scary_facts1 = ["The concentration of carbon dioxide (CO2) in our atmosphere, as of 2018, is the highest it has been in 3 million years.",
+        "Eleven percent of the world's population is currently vulnerable to climate change impacts such as droughts, floods, heat waves, extreme weather events and sea-level rise.",
+        "Indonesia is moving its capital city as its current capital is sinking."]
 
-        scary_facts2 = ["Average wildlife populations have dropped by 60 percent in just over 40 years",
-        "Two-thirds of extreme weather events in the last 20 years were influenced by humans", "Every single minute, the equivalent of 30 football pitches of tropical forests are being lost"]
+        scary_facts2 = ["Average wildlife populations have dropped by 60 percent in just over 40 years.",
+        "Two-thirds of extreme weather events in the last 20 years were influenced by humans.", "Every single minute, the equivalent of 30 football fields of tropical forests are being lost.",
+        "The concentration of carbon dioxide (CO2) in our atmosphere, as of 2018, is the highest it has been in 3 million years."]
 
-        scary_facts3 = ["From 1979 to 2003, excessive heat exposure contributed to more than 8,000 premature deaths in the United States",
-        "We are using more of Earth's resources than it could possibly renew",
-        "99.84% of the land in the state of California is suffering from drought",
-        "The concentration of carbon dioxide (CO2) in our atmosphere, as of 2018, is the highest it has been in 3 million years",
-        "If major change does not happen very soon, the damages of climate change will be irreversible by 2030"]
+        scary_facts3 = ["From 1979 to 2003, excessive heat exposure contributed to more than 8,000 premature deaths in the United States.",
+        "We are using more of Earth's resources than it could possibly renew.",
+        "99.84% of the land in the state of California is suffering from drought.",
+        "If major change does not happen very soon, the damages of climate change will be irreversible by 2030."]
 
         scary_facts_select = random.choice(scary_facts)
         scary_facts_select1 = random.choice(scary_facts1)
