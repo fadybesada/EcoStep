@@ -1,8 +1,14 @@
 /* THIS IS THE CSS  ALL THE PAGES HAVE IN COMMON*/
 /* Add a black background color to the top navigation */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .topnav {
   background-color: #333;
   overflow: hidden;
+  max-width: 1300px;
 }
 
 /* Style the links inside the navigation bar */
