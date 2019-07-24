@@ -46,7 +46,7 @@ var barChartData = {
       backgroundColor: "lightblue",
       borderColor: "blue",
       borderWidth: 1,
-      data: [4, 7, 3, 2.545, 10]
+      data: [14.536325, 6.002, 2.834, 0.076, 23.6]
     }
   ]
 };
