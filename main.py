@@ -11,7 +11,6 @@ the_jinja_environment = jinja2.Environment(
 class MainPage(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_environment.get_template('templates/mainpage.html')
-
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write(template.render())
 
@@ -61,7 +60,7 @@ class FootprintInput(webapp2.RequestHandler):
         rating = "Good"
         if totalCO > 30:
             rating = "Poor"
-        elif totalCO < 30 and totalCO > 15:
+        elif totalCO < 30 and totalCO > 20:
             rating = "Not Bad"
         template_vars = {
             "rating": rating,
@@ -73,6 +72,7 @@ class FootprintInput(webapp2.RequestHandler):
             "miles_trainCO": miles_trainCO,
             "miles_busCO": miles_busCO,
             "hotel_nightsCO": hotel_nightsCO,
+            "totalCO": totalCO,
         }
 
         template = the_jinja_environment.get_template('templates/output.html')
@@ -81,14 +81,12 @@ class FootprintInput(webapp2.RequestHandler):
 class FootprintOutput(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_environment.get_template('templates/output.html')
-
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write(template.render())
 
 class AboutUs(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_environment.get_template('templates/about.html')
-
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write(template.render())
 
