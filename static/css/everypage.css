@@ -5,6 +5,12 @@
     padding: 0;
 }
 
+#hidden {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
 .topnav {
   background-color: black;
   overflow: hidden;
