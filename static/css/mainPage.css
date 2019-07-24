@@ -1,3 +1,15 @@
+.centered {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial;
+  font-size: 60px;
+  color: white;
+}
+/* TEXT BLOCK FOR FIRST IMAGE  */
+
+
 .container {
   position: relative;
   font-family: Arial;
@@ -5,13 +17,26 @@
   align-items: center;
   justify-content: space-evenly;
 }
-
 .text-block {
   position: absolute;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 300px;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding-left: 200px;
+  padding-left: 20px;
   padding-right: 20px;
+}
+
+/* TEXT INSIDE THE BLOCK  */
+h4{
+  color: white;
+  word-spacing: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  
+}
+h5{
+  color: white;
+
+  font-family: sans-serif;
+  text-align: center;
 }
