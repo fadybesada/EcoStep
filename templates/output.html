@@ -17,7 +17,7 @@
   <body>
     {% if rating == "Very Good" %}
     <h1>Your Carbon Footprint rating is: <span style = "color: lime">{{ rating }}</span></h1></br>
-      <div id ="at">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
+      <div class = "graphcenter">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
         </div>
     <div id="hidden">
         <div id="electricityCO">
@@ -47,13 +47,14 @@
         <div id="totalCO">
           {{ totalCO }}
         </div>
-    </div>    </div>
+    </div>
+  </div>
 
     {% endif %}
 
     {% if rating == "Good" %}
     <h1>Your Carbon Footprint rating is: <span style = "color: green">{{ rating }}</span></h1></br>
-        <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
+      <div class = "graphcenter">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
         </div>
     <div id="hidden">
         <div id="electricityCO">
@@ -84,12 +85,13 @@
           {{ totalCO }}
         </div>
     </div>
+  </div>
     {% endif %}
 
     {% if rating == "Fair" %}
     <h1>Your Carbon Footprint rating is: <span style = "color: gold">{{ rating }}</span></h1></br>
     <p>If everyone in the world utilized the same amount of carbon dioxide as you, it would take five Earths to provide enough resources for everyone.</p></br>
-        <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
+      <div class = "graphcenter">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
         </div>
     <div id="hidden">
         <div id="electricityCO">
@@ -120,12 +122,13 @@
           {{ totalCO }}
         </div>
     </div>
+  </div>
     {% endif %}
 
     {% if rating == "Poor" %}
     <h1>Your Carbon Footprint rating is: <span style = "color: orangered">{{ rating }}</span></h1></br>
     <p>If everyone in the world utilized the same amount of carbon dioxide as you, it would take five Earths to provide enough resources for everyone.</p></br>
-        <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
+      <div class = "graphcenter">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
         </div>
     <div id="hidden">
         <div id="electricityCO">
@@ -156,12 +159,13 @@
           {{ totalCO }}
         </div>
     </div>
+  </div>
     {% endif %}
 
     {% if rating == "Very Poor" %}
       <h1>Your Carbon Footprint rating is: <span style = "color: red">{{ rating }}</span></h1></br>
       <p>If everyone in the world utilized the same amount of carbon dioxide as you, it would take five Earths to provide enough resources for everyone.</p></br>
-      <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
+    <div class = "graphcenter">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
       </div>
   <div id="hidden">
       <div id="electricityCO">
@@ -192,6 +196,7 @@
         {{ totalCO }}
       </div>
   </div>
+</div>
     {% endif %}
 
     {% if rating == "Good" or rating == "Very Good" %}
