@@ -69,7 +69,7 @@ button:hover:before,button:hover:after{
   padding-right: 40px;
 }
 
-.home-utility .col {
+.home-utility .col-one {
   width: 30%;
 }
 
@@ -77,12 +77,42 @@ button:hover:before,button:hover:after{
   .flex-grid,
   .home-utility {
     display: block;
-    .col {
+    .col-one {
       width: 100%;
       margin: 0 0 10px 0;
     }
   }
 }
+
+
+
+
+
+
+
+.personal-travel {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.personal-travel .col-two {
+  width: 30%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .personal-travel {
+    display: block;
+    .col-one {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+
 
 
 
@@ -94,7 +124,15 @@ button:hover:before,button:hover:after{
 .flex-grid {
   margin: 0 0 20px 0;
 }
-.col {
+
+
+
+.col-one {
+  background: #DDDDDD;
+  padding: 20px;
+}
+
+.col-two {
   background: #DDDDDD;
   padding: 20px;
 }
