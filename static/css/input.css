@@ -62,20 +62,20 @@ button:hover:before,button:hover:after{
 
 
 
-.flex-grid-thirds {
+.home-utility {
   display: flex;
   justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.flex-grid-thirds .col {
+.home-utility .col {
   width: 30%;
 }
 
 @media (max-width: 400px) {
   .flex-grid,
-  .flex-grid-thirds {
+  .home-utility {
     display: block;
     .col {
       width: 100%;
