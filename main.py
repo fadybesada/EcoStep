@@ -21,8 +21,7 @@ class MainPage(webapp2.RequestHandler):
         "Indonesia is moving its capital city as its current capital is sinking."]
 
         scary_facts2 = ["Average wildlife populations have dropped by 60 percent in just over 40 years.",
-        "Two-thirds of extreme weather events in the last 20 years were influenced by humans.", "Every single minute, the equivalent of 30 football fields of tropical forests are being lost.",
-        "The concentration of carbon dioxide (CO2) in our atmosphere, as of 2018, is the highest it has been in 3 million years."]
+        "Two-thirds of extreme weather events in the last 20 years were influenced by humans.", "Every single minute, the equivalent of 30 football fields of tropical forests are being lost."]
 
         scary_facts3 = ["From 1979 to 2003, excessive heat exposure contributed to more than 8,000 premature deaths in the United States.",
         "We are using more of Earth's resources than it could possibly renew.",
