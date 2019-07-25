@@ -22,11 +22,10 @@ class MainPage(webapp2.RequestHandler):
 
         scary_facts2 = ["Average wildlife populations have dropped by 60 percent in just over 40 years.",
         "Two-thirds of extreme weather events in the last 20 years were influenced by humans.", "Every single minute, the equivalent of 30 football fields of tropical forests are being lost.",
-        "The concentration of carbon dioxide (CO2) in our atmosphere, as of 2018, is the highest it has been in 3 million years."]
+        "99.84% of the land in the state of California is suffering from drought."]
 
         scary_facts3 = ["From 1979 to 2003, excessive heat exposure contributed to more than 8,000 premature deaths in the United States.",
         "We are using more of Earth's resources than it could possibly renew.",
-        "99.84% of the land in the state of California is suffering from drought.",
         "If major change does not happen very soon, the damages of climate change will be irreversible by 2030."]
 
         scary_facts_select = random.choice(scary_facts)
