@@ -1,6 +1,6 @@
 
 input[type=text], select {
-  width: 10%;
+  width: 35%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -52,4 +52,49 @@ button:hover:before,button:hover:after{
   width:100%;
   transition:800ms ease all;
 }
+
+
+
+
+
+
+
+
+
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.flex-grid-thirds .col {
+  width: 30%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+}
+.flex-grid {
+  margin: 0 0 20px 0;
+}
+.col {
+  background: #DDDDDD;
+  padding: 20px;
 }
