@@ -13,6 +13,13 @@ body{
   text-align:center;
 }
 
+h2 {
+  font-family: 'Century Gothic',sans-serif;
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-weight: 150;
+
+}
 
 button{
   background:#1AAB8A;
@@ -30,7 +37,8 @@ button{
 button:hover{
   background:#fff;
   color:#1AAB8A;
-  border-radius: 12px;
+  border-ra
+  dius: 12px;
 }
 button:before,button:after{
   content:'';
@@ -57,7 +65,7 @@ button:hover:before,button:hover:after{
 label{
   font-family: 'Century Gothic',sans-serif;
   font-size: 16px;
-  
+
 }
 
 
@@ -102,7 +110,7 @@ label{
 }
 
 .personal-travel .col-two {
-  width: 40%;
+  width: 42%;
 }
 
 @media (max-width: 400px) {
@@ -121,12 +129,12 @@ label{
 .commuter {
   display: flex;
   justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 280px;
+  padding-right: 280px;
 }
 
 .commuter .col-three {
-  width: 30%;
+  width: 42%;
 }
 
 @media (max-width: 400px) {
