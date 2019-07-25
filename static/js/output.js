@@ -77,3 +77,4 @@ window.onload = function() {
     options: chartOptions
   });
 };
+var steps = document.querySelectorAll('.process-chart > li');
