@@ -93,12 +93,12 @@ button:hover:before,button:hover:after{
 .personal-travel {
   display: flex;
   justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 280px;
+  padding-right: 280px;
 }
 
 .personal-travel .col-two {
-  width: 30%;
+  width: 40%;
 }
 
 @media (max-width: 400px) {
