@@ -11,13 +11,13 @@
   <div class="topnav">
     <a href="/">Home</a>
     <a class="active" href="#calculator">Calculator</a>
-    <a href="/about">About</a>
+    <a href="/about">About Us</a>
   </div>
 
   <body>
     {% if rating == "Very Good" %}
     <h1>Your Carbon Footprint rating is: <span style = "color: lime">{{ rating }}</span></h1></br>
-        <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
+      <div id ="at">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
         </div>
     <div id="hidden">
         <div id="electricityCO">
@@ -47,7 +47,8 @@
         <div id="totalCO">
           {{ totalCO }}
         </div>
-    </div>
+    </div>    </div>
+
     {% endif %}
 
     {% if rating == "Good" %}
