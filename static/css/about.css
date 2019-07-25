@@ -4,6 +4,7 @@ body {
   background-color: #333333;
 }
 
+<<<<<<< HEAD
 canvas {
   position: absolute;
   top: 0;
@@ -12,6 +13,9 @@ canvas {
   bottom: 0;
   z-index: -1;
 }
+=======
+
+>>>>>>> 2ed909afeb53c160ebfe3032df31d18954a3ee2b
 
 body{
   margin: 0;
