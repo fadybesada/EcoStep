@@ -16,7 +16,7 @@ body {
 /*  Website Name ON THE TOP */
 
 .centered {
-  background-color: rgba(0, 0, 0, 0.5);
+  border: 10px solid rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 18%;
   left: 50%;

@@ -54,7 +54,11 @@ button:hover:before,button:hover:after{
 }
 
 
-
+label{
+  font-family: 'Century Gothic',sans-serif;
+  font-size: 16px;
+  
+}
 
 
 
@@ -114,6 +118,29 @@ button:hover:before,button:hover:after{
 
 
 
+.commuter {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.commuter .col-three {
+  width: 30%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .commuter {
+    display: block;
+    .col-one {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+
 
 
 * {
@@ -133,6 +160,11 @@ button:hover:before,button:hover:after{
 }
 
 .col-two {
+  background: #DDDDDD;
+  padding: 20px;
+}
+
+.col-three {
   background: #DDDDDD;
   padding: 20px;
 }
