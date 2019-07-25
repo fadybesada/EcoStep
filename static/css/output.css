@@ -6,7 +6,9 @@ h1, .subhead { text-align: center; }
   max-width: 900px;
   margin: 0 auto;
 }
-
+.graphcenter{
+  padding-left: 19%;
+}
 .process-chart {
   list-style-type: none;
   margin: 1rem 0;
