@@ -32,7 +32,7 @@ body{
   font-family: Arial;
   font-size: 55px;
   color: white;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-family: "Century Gothic", sans-serif;
   letter-spacing: 4px;
   padding-left: 45px;
   padding-right: 45px;
@@ -46,7 +46,6 @@ body{
 /*            */
 /*            */
 /*            */
-
 
 /* FLEXBOX BEGINS */
 
@@ -83,15 +82,9 @@ body{
 
 /* TEXT INSIDE THE BLOCKS */
 
-h1{
-  color: white;
-  font-family: sans-serif;
-  text-align: center;
-}
-
 h2{
   color: white;
-  font-family: sans-serif;
+  font-family: 'Century Gothic', sans-serif;
   font-size: 22px;
   text-align: center;
   font-weight: 180;
@@ -100,14 +93,6 @@ h2{
 /*            */
 /*            */
 /*            */
-
-
-
-
-
-
-
-
 
 .mission {
   display: flex;
