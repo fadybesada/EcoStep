@@ -13,7 +13,13 @@ class MainPage(webapp2.RequestHandler):
     def get(self):
         self.response.headers['Content-Type'] = 'text/html'
         template = the_jinja_environment.get_template('templates/mainpage.html')
-        self.response.write(template.render())
+
+        want_png = {
+        "image_url": "/static/images/ecostep.png",
+        }
+
+
+        self.response.write(template.render(want_png))
 
 class FootprintInput(webapp2.RequestHandler):
     def get(self):
