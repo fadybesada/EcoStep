@@ -24,9 +24,9 @@ h1, .subhead { text-align: center; }
 
   border: 1px solid;
 
-  h3 {
-    flex: 1 0 0;
-    margin-right: 1rem;
+h3 {
+  flex: 1 0 0;
+  margin-right: 1rem;
 
     &:before {
       display: block;
@@ -107,4 +107,56 @@ h1, .subhead { text-align: center; }
 }
 p {
   text-align:center;
+}
+
+#recalc {
+  font-family: 'Century Gothic',sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  border-radius: 12px;
+
+}
+button:hover{
+  background:#DDDDDD;
+  color:#1AAB8A;
+  border-ra
+  dius: 12px;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
