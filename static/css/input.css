@@ -171,9 +171,12 @@ label{
 .col-two {
   background: #DDDDDD;
   padding: 20px;
+  border-radius: 20px;
+
 }
 
 .col-three {
   background: #DDDDDD;
   padding: 20px;
+  border-radius: 20px;
 }
