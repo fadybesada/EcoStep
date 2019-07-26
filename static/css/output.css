@@ -115,6 +115,18 @@ p {
   font-size: 25px;
 }
 
+.know {
+  font-family: 'Century Gothic',sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.scary {
+  font-family: 'Century Gothic',sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
 .center {
   display: flex;
   justify-content: center;

@@ -63,3 +63,12 @@ body {
     display: inline-block;
     margin-right: -4px;
   }
+
+
+.logo{
+  top: 460px;
+	left: 500px;
+  z-index: -1;
+  height: 60px;
+  padding-top:10px;
+}

@@ -20,8 +20,9 @@
 
   <body>
     {% if rating == "Very Good" %}
-    <h1>Your Carbon Footprint rating is: <span style = "color: lime">{{ rating }}</span></h1></br>
-    <p> {{ scary_facts_select }} </p></br>
+    <br><h1>Your Carbon Footprint rating is: <span style = "color: lime">{{ rating }}</span></h1></br>
+    <p class = "know">Did You Know?</p>
+    <p class = "scary"> {{ scary_facts_select }} </p></br>
       <div class = "graphcenter">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
         </div>
     <div id="hidden">
@@ -58,8 +59,9 @@
     {% endif %}
 
     {% if rating == "Good" %}
-    <h1>Your Carbon Footprint rating is: <span style = "color: green">{{ rating }}</span></h1></br>
-    <p> {{ scary_facts_select }} </p></br>
+    <br><h1>Your Carbon Footprint rating is: <span style = "color: green">{{ rating }}</span></h1></br>
+    <p class = "know">Did You Know?</p>
+    <p class = "scary"> {{ scary_facts_select }} </p></br>
       <div class = "graphcenter">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
         </div>
     <div id="hidden">
@@ -95,8 +97,9 @@
     {% endif %}
 
     {% if rating == "Fair" %}
-    <h1>Your Carbon Footprint rating is: <span style = "color: gold">{{ rating }}</span></h1></br>
-    <p>If everyone in the world utilized the same amount of carbon dioxide as you, it would take five Earths to provide enough resources for everyone.</p></br>
+    <br><h1>Your Carbon Footprint rating is: <span style = "color: gold">{{ rating }}</span></h1></br>
+    <p class = "know">Did You Know?</p>
+    <p class = "scary">If everyone in the world utilized the same amount of carbon dioxide as you, it would take five Earths to provide enough resources for everyone.</p></br>
       <div class = "graphcenter">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
         </div>
     <div id="hidden">
@@ -132,8 +135,9 @@
     {% endif %}
 
     {% if rating == "Poor" %}
-    <h1>Your Carbon Footprint rating is: <span style = "color: orangered">{{ rating }}</span></h1></br>
-    <p>If everyone in the world utilized the same amount of carbon dioxide as you, it would take five Earths to provide enough resources for everyone.</p></br>
+    <br><h1>Your Carbon Footprint rating is: <span style = "color: orangered">{{ rating }}</span></h1></br>
+    <p class = "know">Did You Know?</p>
+    <p class = "scary">If everyone in the world utilized the same amount of carbon dioxide as you, it would take five Earths to provide enough resources for everyone.</p></br>
       <div class = "graphcenter">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
         </div>
     <div id="hidden">
@@ -169,8 +173,9 @@
     {% endif %}
 
     {% if rating == "Very Poor" %}
-      <h1>Your Carbon Footprint rating is: <span style = "color: red">{{ rating }}</span></h1></br>
-      <p>If everyone in the world utilized the same amount of carbon dioxide as you, it would take five Earths to provide enough resources for everyone.</p></br>
+      <br><h1>Your Carbon Footprint rating is: <span style = "color: red">{{ rating }}</span></h1></br>
+      <p class = "know">Did You Know?</p>
+      <p class = "scary">If everyone in the world utilized the same amount of carbon dioxide as you, it would take five Earths to provide enough resources for everyone.</p></br>
     <div class = "graphcenter">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
       </div>
   <div id="hidden">
@@ -207,7 +212,7 @@
 
     {% if rating == "Good" or rating == "Very Good" %}
     <div class="wrapper">
-    <h1>How to Continue Doing Well?</h1>
+    <br><h1>How to Continue Doing Well?</h1>
         <p class="subhead">Follow these steps:</p>
           <ol class="process-chart">
             <li>
@@ -280,7 +285,7 @@
 
     {% if rating == "Fair" or rating == "Poor" or rating == "Very Poor"%}
     <div class="wrapper">
-      <h1>How to Prevent?</h1>
+      <br><h1>How to Prevent?</h1>
         <p class="subhead">Follow these steps:</p>
           <ol class="process-chart">
             <li>
