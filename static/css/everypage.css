@@ -41,12 +41,12 @@ body {
 }
 
 .nav a:hover {
-  background-color: #74E33A;
+  background-color: #2ECC71;
 }
 
 .nav a.active {
   background-color: #fff;
-  color: #444;
+  color: #2ECC71;
   cursor: default;
 }
 
