@@ -33,6 +33,10 @@ body {
   border-bottom: 1px solid #888;
 }
 
+.nav img {
+  text-align: justify;
+}
+
 .nav a {
   text-decoration: none;
   color: black;
@@ -66,9 +70,6 @@ body {
 
 
 .logo{
-  top: 460px;
-	left: 500px;
   z-index: -1;
-  height: 60px;
-  padding-top:10px;
+  height: 50px;
 }
