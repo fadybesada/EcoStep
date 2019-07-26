@@ -11,6 +11,7 @@
     <header>
       <div class="nav">
         <ul>
+          <img src = "/static/images/EcoStep.png" class = "logo">
           <li class="home"><a href="/">Home</a></li>
           <li class="calculator"><a class="active" href="#">Calculator</a></li>
           <li class="about"><a href="/about">About Us</a></li>
@@ -281,7 +282,14 @@
         </ol>
         </div>
     {% endif %}
+
+    <p id = "recalc">Would you like to calculate another carbon footprint?</p><br>
+        <form class="center" action="/input">
+        <button id = "button" type="submit">Recalculate!</button>
+      </form><br>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script type="text/javascript" src="static/js/output.js"></script>
+
   </body>
 </html>
