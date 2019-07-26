@@ -6,6 +6,7 @@ body{
 }
 
 .video {
+  transform: scale(1.2);
   position: fixed;
   right: 20px;
   top: 5px;
