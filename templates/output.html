@@ -17,6 +17,7 @@
   <body>
     {% if rating == "Very Good" %}
     <h1>Your Carbon Footprint rating is: <span style = "color: lime">{{ rating }}</span></h1></br>
+    <div> {{ scary_facts_select }} </div></br>
       <div class = "graphcenter">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
         </div>
     <div id="hidden">
@@ -54,6 +55,7 @@
 
     {% if rating == "Good" %}
     <h1>Your Carbon Footprint rating is: <span style = "color: green">{{ rating }}</span></h1></br>
+    <div> {{ scary_facts_select }} </div></br>
       <div class = "graphcenter">  <div id="container" style="width: 75%;"><canvas id="canvas"></canvas>
         </div>
     <div id="hidden">
