@@ -105,12 +105,12 @@ label{
 .personal-travel {
   display: flex;
   justify-content: space-between;
-  padding-left: 280px;
-  padding-right: 280px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .personal-travel .col-two {
-  width: 42%;
+  width: 30%;
 }
 
 @media (max-width: 400px) {
@@ -165,6 +165,7 @@ label{
 .col-one {
   background: #DDDDDD;
   padding: 20px;
+  border-radius: 20px;
 }
 
 .col-two {

@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="/static/css/everypage.css">
   <link rel="stylesheet" href="/static/css/input.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
     <!-- NAVIGATION BAR -->
@@ -46,9 +47,9 @@
           </label>
           </div>
       </div>
-      <br><br><br><br><h2>Personal Travel  <i class="fa fa-plane"></i></h2><br><br><br><br>
+      
 
-
+      <br><br><br><br><h2>Personal Travel  <span style = "font-size: 40px; letter-spacing: 10px;">  & </span> Hotel Stays  <i class="fa fa-plane"></i></h2><br><br><br><br>
       <div class="personal-travel">
           <div class="col-two">
             <label>
@@ -63,53 +64,34 @@
               <input type="text" name="miles_flown" value="" placeholder="Enter 0 if N/A" required><br><br>
             </label>
           </div>
+
+          <div class="col-two">
+            <label>
+              Approximately, how many nights do you stay at a hotel each year?:
+              <input type="text" name="hotel_nights" value="" placeholder="Enter 0 if N/A" required><br><br>
+          </label>
+          </div>
       </div>
-      <br><br><br><br><h2>Home Utility  <i class="fa fa-home"></i></h2><br><br><br><br>
 
 
 
+      <br><br><br><br><h2>Commute  <i class="material-icons" style="font-size:48px;">train</i></h2><br><br><br><br>
       <div class="commuter">
           <div class="col-three">
             <label>
-            Approximately, how many miles do you drive each year?:<br><br>
-            <input type="text" name="miles_driven" value="" placeholder="Enter 0 if N/A" required><br><br>
+              Approximately, how many miles do you commute with a train each year?:
+              <input type="text" name="miles_train" value="" placeholder="Enter 0 if N/A" required><br><br>
             </label>
           </div>
 
           <div class="col-three">
             <label>
-              Approximately, how many miles do you travel on a plane each year?:<br><br>
-              <input type="text" name="miles_flown" value="" placeholder="Enter 0 if N/A" required><br><br>
+              Approximately, how many miles do you commute with a bus each year?:
+              <input type="text" name="miles_bus" value="" placeholder="Enter 0 if N/A" required><br><br>
             </label>
           </div>
       </div>
-
-
-        <label>
-          Approximately, how many miles do you drive each year?:
-          <input type="text" name="miles_driven" value="" placeholder="Enter 0 if N/A" required><br><br>
-        </label>
-
-        <label>
-          Approximately, how many miles do you travel on a plane each year?:
-          <input type="text" name="miles_flown" value="" placeholder="Enter 0 if N/A" required><br><br>
-        </label>
-
-        <label>
-          Approximately, how many miles do you commute with a train each year?:
-          <input type="text" name="miles_train" value="" placeholder="Enter 0 if N/A" required><br><br>
-        </label>
-
-        <label>
-          Approximately, how many miles do you commute with a bus each year?:
-          <input type="text" name="miles_bus" value="" placeholder="Enter 0 if N/A" required><br><br>
-        </label>
-
-        <label>
-          Approximately, how many nights do you stay at a hotel each year?:
-          <input type="text" name="hotel_nights" value="" placeholder="Enter 0 if N/A" required><br><br>
-        </label>
-
+      <br><br><br>
       <button id = "button" type="submit">Find My Carbon Footprint!</button>
       <br><br><br>
   </form>
