@@ -58,7 +58,7 @@
   </div>
 
     {% endif %}
-
+<strong></strong>
     {% if rating == "Good" %}
     <br><h1>Your Carbon Footprint rating is: <span style = "color: green">{{ rating }}</span></h1></br>
     <p class = "know">Did You Know?</p>
@@ -209,48 +209,50 @@
       </div>
   </div>
 </div>
+
     {% endif %}
 
     {% if rating == "Good" or rating == "Very Good" %}
     <div class="wrapper">
-    <br><h1>How to Continue Doing Well?</h1>
+    <br><h1>How to Continue Doing Well</h1>
         <p class="subhead">Spread the word! Follow these steps to continue:</p>
           <ol class="process-chart">
             <li>
-              <h3>Eat Less Meat</h3>
               <div class="details">
+                <h5 class="black" >Eat Less Meat</h5><br>
                 <p>Limiting meat consumption itself will implement a major difference.
                   Agricultural corporations greenhouse gas emissions are actually worse than fossil fuels. Our focus on diminishing our dependence on fossil fuels blinds us from a greater culprit. To produce a pound of beef will require over 5,000 gallons of water. Meat is the top consumer of our planet's freshwater, and livestock agriculture is rapidly increasing water insufficiency.</p>
               </div>
             </li>
             <li>
-              <h3>Unplug Devices</h3>
+
               <div class="details">
+                <h5 class="black" >Unplug Devices</h5><br>
                 <p>All electronic devices still use energy while in standby. Standby is responsible for draining $19 billion worth of energy a year. Keep your device(s) unplugged at all times if your not using them.</p>
               </div>
             </li>
             <li>
-              <h3>Drive Less</h3>
               <div class="details">
-                <p>Try to walk, bike, skate or take public transportation. Many cities and university campuses have invested in infrastructure to reduce the necessity of owning a car. There are options such as trains, buses, bicycles, electric scooters and cars. Public transportation saves 37 million tons of carbon emissions a year.</p>
+                <h5 class ="black" >Drive Less</h5><br>
+                <p class ="white">Try to walk, bike, skate or take public transportation. Many cities and university campuses have invested in infrastructure to reduce the necessity of owning a car. There are options such as trains, buses, bicycles, electric scooters and cars. Public transportation saves 37 million tons of carbon emissions a year.</p>
             </div>
           </li>
           <li>
-            <h3>Quality Over Quality</h3>
             <div class="details">
-              <p>Avoid cheap fashion items which are offered at very low prices. Due to their cheap material, many of these textiles fall apart and are discarded without thought. These thrown away clothes account for 15 million tons worth of textile waste. Buy less consumer merchandise, and more reusable items. Try to recycle items frequently and try buying pre owned items.</p>
+              <h5 class ="white" >Quality Over Quantity</h5><br>
+              <p class ="white">Avoid cheap fashion items which are offered at very low prices. Due to their cheap material, many of these textiles fall apart and are discarded without thought. These thrown away clothes account for 15 million tons worth of textile waste. Buy less consumer merchandise, and more reusable items. Try to recycle items frequently and try buying pre owned items.</p>
             </div>
           </li>
           <li>
-            <h3>Air Dry Clothes</h3>
             <div class="details">
-              <p>A single dryer load requires 5 times more electricity than washing. By air drying your clothes, you will save about ⅓ of your footprint. Unfortunately, air drying your clothes is not popular in the United States compared to Europeans (about 95% of Italians do not own a dryer).</p>
+              <h5 class ="white" >Air Dry Clothes</h5><br>
+              <p class ="white">A single dryer load requires 5 times more electricity than washing. By air drying your clothes, you will save about ⅓ of your footprint. Unfortunately, air drying your clothes is not popular in the United States compared to Europeans (about 95% of Italians do not own a dryer).</p>
             </div>
           </li>
           <li>
-            <h3>Nonstop Flights</h3>
             <div class="details">
-              <p>Air travel is most likely responsible for the majority of your carbon footprint. Try to reduce your flight frequency if possible, or drive instead for shorter trips. Additionally, try to fly nonstop because landing and takeoffs require/produce additional emissions.</p>
+              <h5 class ="white" >Nonstop Flights</h5><br>
+              <p class ="white">Air travel is most likely responsible for the majority of your carbon footprint. Try to reduce your flight frequency if possible, or drive instead for shorter trips. Additionally, try to fly nonstop because landing and takeoffs require/produce additional emissions.</p>
             </div>
           </li>
         </ol>
@@ -285,7 +287,7 @@
             </div>
           </li>
           <li>
-            <h3>Quality Over Quality</h3>
+            <h3>Quality Over Quantity</h3>
             <div class="details">
               <p>Avoid cheap fashion items which are offered at very low prices. Due to their cheap material, many of these textiles fall apart and are discarded without thought. These thrown away clothes account for 15 million tons worth of textile waste. Buy less consumer merchandise, and more reusable items. Try to recycle items frequently and try buying pre owned items.</p>
             </div>
@@ -306,10 +308,10 @@
         </div>
     {% endif %}
 
-    <p id = "recalc">Would you like to calculate another carbon footprint?</p><br>
+    <p id = "recalc" class= "white">Would you like to calculate another carbon footprint?</p><br>
         <form class="center" action="/input">
         <button id = "button" type="submit">Recalculate!</button>
-      </form><br>
+      </form><br><br>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script type="text/javascript" src="static/js/output.js"></script>
