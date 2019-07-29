@@ -182,8 +182,8 @@ button:hover:before,button:hover:after{
 
 h5{
   /* font-size: 25px; */
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 5px;
+  padding-right: 5px;
   /* font: 10px verdana, sans-serif; */
   /* font: italic 1.1em/2.2 georgia; */
   /* font: 75% georgia, sans-serif; */
@@ -195,9 +195,9 @@ p {
   font-weight: 180;
   font-size: 1em;
   text-align:center;
-  padding-left: 28px;
-  padding-right: 28px;
-  line-height: 1.5;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 1.4;
 }
 
 .white {
